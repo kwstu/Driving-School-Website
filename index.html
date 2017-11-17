@@ -1,0 +1,396 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving School</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/my.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700,900' rel='stylesheet' type='text/css'>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCfbBhnbRpnE06dzXBlcqPfRJcAWDWmjFo"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top -50
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</script>
+
+
+<script>
+$(function() {
+    $( "#button" ).click(function() {
+        $( "#pricing" ).slideToggle();
+    });
+});
+</script>
+
+</head>
+
+
+<body>
+
+  <div class="row fullWidth show-for-small-only">
+    
+    <div class="nav-bar-small">
+
+      <div id="wrap">
+        <ul id="smallul">
+            <li id="lismall"><a id="asmall" href="#">Contact</a></li>
+            <li id="lismall"><a id="asmall" href="#">Reviews</a></li>
+            <li id="lismall"><a id="asmall"href="#pricing">Prices</a></li>  
+
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+<div class="row fullWidth hide-for-small-only" id="navcontact">
+  
+  <div class="hide-for-small-only">
+    <div class="nav-bar">
+      <div id="wrap">
+        <ul id="ulbig">
+          <div id="introheading">DRIVE TODAY</div>
+          <a href="#callnow" class="button"  id="btnnav">CONTACT</a>
+            <li id="libig"><a id="abig" href="#aboutus">OUR COMPANY</a></li>
+            <li id="libig"><a id="abig" href="#pricing">PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video screen respons -->
+
+<div id="filler"></div>
+
+  <div class="row fullWidth" id="banner">
+
+      <video controls muted id="bgVideo" autoplay loop poster="" >
+          <!-- Video is embedded in the WEBM format -->
+        <source src="Media/road1.mp4" type="video/mp4">
+      </video>
+
+    <div id="bannertxt"> LESSONS FROM<br>£20</div>
+
+    <a href="#content" class="button" id="btnintro">EXPLORE</a>
+
+  </div>
+
+  <div id="aboutus">
+
+    <div class="column" id="c2">
+
+      <a id="button">Show/Hide Pricing</a>
+
+    </div>
+ 
+  </div>
+
+</div>
+
+
+<div id="pricing">
+  <div id="wrap">
+    <div id="firsttitle">
+        <p id="title">Pricing</p>
+    </div>
+
+   <div class="row" data-equalizer id="test-eq">
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>5 Lessons</p>
+        <div id="tempframe">
+          <div id="priceunit">£100</div>
+        <!-- <img src= "http://www.driving-school-st-helens.co.uk/images/learner_driver_st_helens.jpg"> -->
+        <p id="quote"> 5 hour Block session over various days.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>10 Lessons</p>
+        <div id="tempframe">
+          <div id="priceunit">£200</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> 10 hour Block session over various days.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>20 Lessons</p>
+        <div id="tempframe">
+          <div id="priceunit">£400</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> 20 hour Block session over various days.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>30 Lessons</p>
+        <div id="tempframe">
+          <div id="priceunit">£600</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> 30 hour Block session over various days.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="row" data-equalizer id="test-eq">
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>40 Lessons</p>
+        <div id="tempframe">
+          <div id="priceunit">£800</div>
+        <!-- <img src= "http://www.driving-school-st-helens.co.uk/images/learner_driver_st_helens.jpg"> -->
+        <p id="quote"> 40 hour Block session over various days.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>Catch up Lesson</p>
+        <div id="tempframe">
+          <div id="priceunit">£75</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> For people with lack of experience.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>Full Theory Test Pratice</p>
+        <div id="tempframe">
+          <div id="priceunit">£30</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> Theory test to book before actual exam.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="" id="panelprice">
+        <p>Physical Exam Pratice</p>
+        <div id="tempframe">
+          <div id="priceunit">£30</div>
+        <!-- <img src= "https://go2drivingschool.co.uk/wp-content/uploads/2016/05/Go2-Ravi-Pass-300x300.jpg"> -->
+        <p id="quote"> Physical test to book before actual exam.</p>
+        <button type="button" id="btnprice">Book Now</button>
+        
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <p>Please get in contact to discuss any requirments or to disucss specifically tailored lesson plans.</p>
+
+</div>
+</div>
+
+
+
+
+<div id="wrap">
+  <div id="content">
+
+  <div id="title">Our Fleet</div>
+  <br>
+  <p>Standard Cars</p>
+   <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+    <div class="medium-4 columns">
+      <div class="" id="panelprice">
+        <p>Tesla Model S</p>
+        <img src= "http://fr.ubergizmo.com/wp-content/uploads/2015/01/tesla-model-s-mode-insane-acceleration-300x300.jpg">
+       
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="" id="panelprice">
+        <p>Nissan Leaf</p>
+        <img src= "http://pop.h-cdn.co/assets/cm/15/05/54cb0f1659a7d_-_2013-nissan-leaf-01-0413-mdn.jpg">
+       
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="" id="panelprice">
+        <p>Ford Feista</p>
+        <img src= "http://i.ebayimg.com/00/s/MTIwMFgxMjAw/z/k28AAOSwQaJXQuj8/$_35.JPG">
+       
+      </div>
+    </div>
+  </div>
+  <p id="fleetinfo">Information about driving school fleet here.</p>
+
+  </div>
+</div>
+
+<div id="content">
+  <div id="wrap">
+    <p id="title">Reviews</p>
+      <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+    <div class="medium-4 columns">
+      <div class="" id="panel">
+        <p>Julia</p>
+        <img id="reviewimg" src= "http://going2pass.com/wp-content/uploads/2014/04/IMG_1072.jpg">
+        <p id="quote"> "My theory test was going to run out on the 10th, so I decided to pass my practical test today!  thanks to Bryan from Drive 365 Driving School Best instructor around - would recommend to all!"</p>
+      </div>
+    </div>
+    <div class="medium-4 columns" id="panel">
+      <div class="" >
+        <p>Lebron</p>
+        <img id="reviewimg" src= "http://www.apass4u.co.uk/media/images/thomas-clover.jpg">
+        <p id="quote"> "I found looking for a driving instructor a bit daunting, not really knowing what to ask. Jackie came highly recommended from both past pupils and other driving instructors. As an extremely nervous person, Jackie from the first lesson put me at ease and instilled confidence."</p>
+      </div>
+    </div>
+    <div class="medium-4 columns" id="panel">
+      <div class="">
+        <p>Seb</p>
+        <img id="reviewimg" src= "https://1.bp.blogspot.com/-janjpaQVM9U/VzoA2aIiKjI/AAAAAAAAIS8/oZpNqY1K-QwGBSEFva5Teft2qqMz7hQ8wCLcB/s1600/IMG_20160512_091510213_HDR.jpg">
+        <p id="quote"> "The instructors are reliable, friendly and flexible. They have also showed a great deal of patience and understanding, in my case. Without them, learning to drive would have been an incredibly stressful ordeal."</p>
+      </div>
+    </div>
+  </div>
+   
+      <div id="paragraph">
+        
+  </div>
+  </div>
+</div>
+
+
+<div id="callnow">
+  <div id="wrap">
+  Call now on 0737672916
+  </div>
+</div>
+
+<section class="contact" id="cont">
+  
+  <form action="mail.php" method="post" id="cform" target="my_iframe" onsubmit="sayThanks()">
+  <div id="wrap">
+   <div class="row medium-up-2 large-up-2 small-up-1" >
+
+    <div class="column">
+    <label>Full Name</label>
+    <input type="text" name="name" id="namebox">
+    </div>
+
+      <div class="column">
+      <label>Email</label>
+      <input type="text" name="email" id="emailbox"> 
+   
+      </div>
+
+    </div>
+
+     <div class="row medium-up-3 large-up-3 small-up-1" >
+
+     <div class="column">
+      <label>Town</label>
+      <input type="text" name="name" id="namebox">
+     </div>
+      <div class="column">
+        <label>City</label>
+        <input type="text" name="email" id="emailbox"> 
+      </div>
+      <div class="column">
+        <label>I'm Enquiring About</label>
+        <select name="cars">
+          <option value="volvo">-</option>
+          <option value="volvo">Driving Lessons</option>
+          <option value="saab">Pratice Exams</option>
+          <option value="fiat">Other</option>
+        </select> 
+      </div>
+    </div>
+  <div class="row" >
+    <div class="column">
+       <label>Aditional Information</label>
+       <input type="text" class="message_input" name="message" id="messagebox">
+    </div>
+  </div>
+
+    <input name="submit" type="submit" class="submit" id="btn1">
+   </div>
+  </form>
+
+  <iframe name="my_iframe" width="1" height="1" style="border:none"></iframe>  
+  
+</section>
+
+
+
+<div id="map">
+<div id="wrap">
+<div id="title">Where We Are Located</div>
+<div id="googleMap"></div>
+</div>
+</div>
+<div id="footer">
+
+  <div id="wrap">
+   <p>Opening Hours</p>
+      <p>Monday-Friday: 9am-5pm
+      Weekends: Closed 
+      Bank Holidays: Closed</p>
+
+    <p>Created by William R Kemp 2016,
+      Owned by DriveToday</p>
+    
+  </div>
+
+</div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
